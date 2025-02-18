@@ -1,2 +1,5 @@
-Flask==2.0.1
+Flask
 requests
+selenium
+gunicorn
+Werkzeug==2.0.3
